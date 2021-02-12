@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tic Tac Toe | Game </title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="title-area">
+        <h1>Jogo da Velha</h1>
+    </div>
+    <div class="container">
+        
+        <div class="placar-X">
+            <h2 class="placar-title">SCORE X:</h2>
+            <div class="content-placar-X">0</div>
+            <div class="message-placar-X">WIN</div>
+        </div>
+        <div class="game"></div>
+        <div class="placar-O">
+            <h2 class="placar-title">SCORE 0:</h2>
+            <div class="content-placar-O">0</div>
+            <div class="message-placar-O">WIN</div>
+        </div>
+
+    </div>
+    <div class="button-area">
+        <span class="message">Game Over</span>
+        <button id="start" name="start" onclick="restart()">Play</button>
+    </div>
+
+    <script src="./JS/tic-tac-toe2.js"></script>
+    <script>
+        init( document.querySelector('.game'), 
+              document.querySelector('.message'), 
+              document.querySelector('#start'), 
+              document.querySelector('.content-placar-O'), 
+              document.querySelector('.content-placar-X') ); 
+    </script>
+</body>
+</html>
