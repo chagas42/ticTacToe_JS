@@ -1,4 +1,5 @@
-const board = ['', '', '', '', '', '', '', '', '']; //
+const board = ['', '', '', '', '', '', '', '', '']; 
+
 const winning_sequences = [
         
     [0,1,2], 
@@ -11,6 +12,7 @@ const winning_sequences = [
     [2,4,6] 
 
 ]; 
+
 const simbols = {
     options:['X', 'O'], 
     turn_index:0, 
@@ -67,7 +69,6 @@ const make_play = ( position ) => {
     }
 }; 
 
-
 function game_is_over(){ 
 
     gameover = true; 
@@ -86,7 +87,6 @@ function restart(){
 
 }; 
 
-
 function check_winning_sequences(simbol){ 
 
     for(i in winning_sequences ){ 
@@ -102,7 +102,6 @@ function check_winning_sequences(simbol){
     return -1; 
 
 }; 
-
 
 function message_winning(simbol){ //mostra o 
 
@@ -129,7 +128,6 @@ function write_winning(simbol){ //escreve na tela qual player foi vitorioso
     }
 
 }; 
-
 
 function draw(){ //desenha a ação no nosso board atraves da função make_play
 
