@@ -1,14 +1,14 @@
 const board = ['', '', '', '', '', '', '', '', '']; //
 const winning_sequences = [
         
-    [0,1,2], //sequencia vencedora 0
-    [3,4,5], //sequencia vencedora 1
-    [6,7,8], //sequencia vencedora 2
-    [0,3,6], //sequencia vencedora 3
-    [1,4,7], //sequencia vencedora 4
-    [2,5,8], //sequencia vencedora 5
-    [0,4,8], //sequencia vencedora 6
-    [2,4,6]  //sequencia vencedora 7
+    [0,1,2], 
+    [3,4,5], 
+    [6,7,8], 
+    [0,3,6], 
+    [1,4,7], 
+    [2,5,8],
+    [0,4,8],
+    [2,4,6] 
 
 ]; 
 const simbols = {
@@ -18,13 +18,13 @@ const simbols = {
         this.turn_index = ((this.turn_index === 0) ? 1 : 0 ); 
     }
 }; 
+
 let score_X = null; 
 let score_O = null; 
 let play_button_element = null; 
 let message_winning_element = null; 
 let container_element = null; 
 let gameover = false; 
-
 
 const init = ( element1, element2, element3, element4, element5 ) => { 
     
